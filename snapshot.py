@@ -2,13 +2,13 @@ import cv2
 import time
 import os
 
-input_dir = "/Volumes/VERBATIM HD"
-video_dir = "20190121_13"
-output_dir = "../../images/"
+input_dir = "/Volumes/VERBATIM HD/5805_DOT_ArterialNetworkFootage/Site01-StanleyAve,MountWaverley/Camera01/C341/DCIM/101MEDIA"
+video_dir = "Site01-StanleyAve,MountWaverley"
+output_dir = "images/"
 
 def snapshot(video_name):
 
-    input_video = os.path.join(input_dir, video_dir, video_name)
+    input_video = os.path.join(input_dir, video_name)
 
     # Loading video
     vidcap = cv2.VideoCapture(input_video)
@@ -52,7 +52,7 @@ def main():
     if not os.path.exists(os.path.join(output_dir, video_dir)):
         os.makedirs(os.path.join(output_dir, video_dir))
 
-    for video_name in os.listdir(os.path.join(input_dir, video_dir)):
+    for video_name in os.listdir(input_dir):
         if video_name.endswith(".mkv") and not video_name.startswith("._"):
             snapshot(video_name)
 
