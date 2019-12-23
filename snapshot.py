@@ -2,6 +2,7 @@ import cv2
 import time
 import os
 
+# Set input and output directories
 input_dir = "/Volumes/VERBATIM HD/5805_DOT_ArterialNetworkFootage/Site01-StanleyAve,MountWaverley/Camera01/C341/DCIM/101MEDIA"
 video_dir = "Site01-StanleyAve,MountWaverley"
 output_dir = "images/"
