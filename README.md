@@ -66,11 +66,11 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
    ```
 3. This will play **all** the video in `input_dir`, and save the images to `output_dir/video_dir/`
 4. Hint: You can specify a start point of the playlist
-   * For example, to play the videos starting from `20191210-0203_CAM2_0040.MP4`, run:
+   * For example, to play the videos starting from `20191210-0203_CAM2_0040.MP4`, run: **(Sorted by video filenames in ascending order)**
    ```
    python3 snapshot_playall.py -s 20191210-0203_CAM2_0040.MP4
    ```
-   ("-s" is the optional argument for a start point of playlist)
+   ("-s" is the optional argument for a start point of playlist)  
 5. Hint2: Press `Ctrl+C` in terminal if you want to exit all the videos (exit the program)
 ---
 
