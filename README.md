@@ -41,7 +41,9 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
    * capture and label about 2-3 frames per truck/trailer
 2. "Esc" - Skip / exit the current video
 3. Key "P" - Pause video
+   * Press "P" again to continus
 4. Key "D" - Skip 10 frames (useful when only a few vehicles are in the video)
+   * Note: cann't go back to previous frames
 
 ### Option 1: Capture images from a specific video
 1. Set the input, video, and output directory, video_name in `snapshot.py`:
