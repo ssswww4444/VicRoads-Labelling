@@ -31,7 +31,7 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 
 ## Capturing images (Two Options)
 
-#### Basic Operations
+### Basic Operations
 1. "Space" - Capture the current frame
 2. "Esc" - Skip / exit the current video
 3. Key "P" - Pause video
