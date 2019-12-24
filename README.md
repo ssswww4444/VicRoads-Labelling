@@ -37,6 +37,8 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 
 ### Basic Operations
 1. "Space" - Capture the current frame
+   * only capture the frames that contain truck/trailer
+   * capture and label about 2-3 frames per truck/trailer
 2. "Esc" - Skip / exit the current video
 3. Key "P" - Pause video
 4. Key "D" - Skip 10 frames (useful when only a few vehicles are in the video)
