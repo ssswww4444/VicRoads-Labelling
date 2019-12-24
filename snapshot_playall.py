@@ -46,7 +46,6 @@ def snapshot(video_name):
         elif key%256 == 112:
             # Key "P" pressed
             pause_flag = not pause_flag
-            print("p pressed")
         elif key%256 == 100:
             # Key "D" pressed
             for i in range(20):

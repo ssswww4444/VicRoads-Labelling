@@ -58,6 +58,7 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
    python3 snapshot_playall.py -s 20191210-0203_CAM2_0040.MP4
    ```
    ("-s" is the optional argument for a start point of playlist)
+5. Hint2: Press `Ctrl+C` in terminal if you want to exit all the videos (exit the program)
 ---
 
 ## Labelling images
