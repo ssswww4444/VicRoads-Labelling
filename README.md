@@ -18,7 +18,10 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 
 ## Trucks and Trailers Taxonomy:
 * The classes are determined by the number of axles and the spacing between them
-* Check: https://www.nhvr.gov.au/files/201707-0577-common-heavy-freight-vehicles-combinations.pdf
+* Check the first 26 classes in the PDF (up to 12 Axle B-triple): https://www.nhvr.gov.au/files/201707-0577-common-heavy-freight-vehicles-combinations.pdf
+* We're also interested in 4 additional classes: **Van**, **Bus**, **Other**, and **DGV**
+* 29 classes shown in the list below (this doesn't include DGV since it's a new class to identify)
+<img src="classes.png" width="500">
 
 ## Special Classes
 1. Other: label the vehicle as “Other” if it’s a truck / trailer but doesn’t match with any class in the PDF provided above  
