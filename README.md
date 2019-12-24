@@ -82,3 +82,4 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 2. About 30-40% of them are totally dark, just ignore those videos, don't capture/label them
 3. Only capture/label the frames when you can clearly identify the truck and trailer class
 4. Please contact me if you have any questions (peiyuns@student.unimelb.edu.au)
+5. Pei-Yun: I'll begin with Site02 and Site03.
