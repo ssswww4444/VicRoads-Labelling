@@ -27,8 +27,8 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 1. Other: label the vehicle as “Other” if it’s a truck / trailer but doesn’t match with any class in the PDF provided above  
 <img src="other.png" width="500">
 2. DGV: label the small DGV (Dangerous Goods Vehicles) signs  
-<img src="DGV.png" width="250">
-<img src="DGV2.png" width="600">
+<img src="DGV.png" width="200">
+<img src="DGV2.png" width="500">
 
 ---
 
