@@ -16,6 +16,18 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 
 ---
 
+## Trucks and Trailers Taxonomy:
+* The classes are determined by the number of axles and the spacing between them
+* Check: https://www.nhvr.gov.au/files/201707-0577-common-heavy-freight-vehicles-combinations.pdf
+
+## Special Classes
+1. Other: label the vehicle as “Other” if it’s a truck / trailer but doesn’t match with any class in the PDF provided above  
+<img src="other.png" width="500">
+2. DGV: label the small DGV (Dangerous Goods Vehicles) signs  
+<img src="DGV.png" width="250">
+<img src="DGV2.png" width="600">
+---
+
 ## Capturing images (Two Options)
 
 #### Basic Operations
