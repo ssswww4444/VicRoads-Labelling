@@ -1,15 +1,15 @@
 import cv2
 import time
 import os
+import argparse
 
 # Set input and output directories
 input_dir = "/Volumes/VERBATIM HD/5805_DOT_ArterialNetworkFootage/Site01-StanleyAve,MountWaverley/Camera01/C341/DCIM/101MEDIA"
 video_dir = "Site01-StanleyAve,MountWaverley"
-video_name = "20191210-0733_CAM2_0073.MP4"
 output_dir = "images/"
 
 def snapshot(video_name):
-
+    
     input_video = os.path.join(input_dir, video_name)
 
     # Loading video
@@ -53,8 +53,22 @@ def snapshot(video_name):
                 vidcap.grab()
     
     vidcap.release()
+    
+
+def get_args():
+    """ Obtaining args from terminal """
+    parser = argparse.ArgumentParser(description="Snapshot")
+    # filenames
+    parser.add_argument("-s", "--start_from", type = str, default = None, 
+                        required = False, help = "Twitter data file")
+    args = parser.parse_args()
+    
+    return args
 
 def main():
+    
+    # read optional argument:start_from
+    args = get_args()
 
     # Window for snapshots
     cv2.namedWindow("Truck_Video", cv2.WINDOW_NORMAL)
@@ -65,8 +79,18 @@ def main():
         os.makedirs(output_dir)
     if not os.path.exists(os.path.join(output_dir, video_dir)):
         os.makedirs(os.path.join(output_dir, video_dir))
-
-    snapshot(video_name)
+        
+    if args.start_from == None:
+        # play all video from the begining
+        for video_name in os.listdir(input_dir):
+            if video_name.endswith(".MP4") and not video_name.startswith("._"):
+                snapshot(video_name)
+    else:
+        # play all video from "start_from"
+        index = os.listdir(input_dir).index(args.start_from)
+        for video_name in os.listdir(input_dir)[index:]:
+            if video_name.endswith(".MP4") and not video_name.startswith("._"):
+                snapshot(video_name)
 
     cv2.destroyAllWindows()
 
