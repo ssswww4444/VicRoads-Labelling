@@ -20,6 +20,7 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 * The classes are determined by the number of axles and the spacing between them
 * Check the first 26 classes in the PDF (up to 12 Axle B-triple): https://www.nhvr.gov.au/files/201707-0577-common-heavy-freight-vehicles-combinations.pdf
 * We're also interested in 4 additional classes: **Van**, **Bus**, **Other**, and **DGV**
+  * (So, there should be **30 classes** in total)
 * 29 classes shown in the list below (this doesn't include DGV since it's a new class to identify)
   <img src="classes.png" width="300">
 
