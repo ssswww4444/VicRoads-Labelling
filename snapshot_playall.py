@@ -4,8 +4,8 @@ import os
 import argparse
 
 # Set input and output directories
-input_dir = "/Volumes/VERBATIM HD/5805_DOT_ArterialNetworkFootage/Site01-StanleyAve,MountWaverley/Camera01/C341/DCIM/101MEDIA"
-video_dir = "Site01-StanleyAve,MountWaverley"
+input_dir = "/Users/peiyuns/Desktop/Site02-SomervilleRd50mEastOfBoralEntrance/Camera02/C354/DCIM/101MEDIA"
+video_dir = "Site02-SomervilleRd50mEastOfBoralEntrance"
 output_dir = "images/"
 
 def snapshot(video_name):
@@ -79,15 +79,19 @@ def main():
     if not os.path.exists(os.path.join(output_dir, video_dir)):
         os.makedirs(os.path.join(output_dir, video_dir))
         
+    sorted_videonames = sorted(os.listdir(input_dir))
+        
     if args.start_from == None:
         # play all video from the begining
-        for video_name in os.listdir(input_dir):
+        for video_name in sorted_videonames:
             if video_name.endswith(".MP4") and not video_name.startswith("._"):
                 snapshot(video_name)
     else:
         # play all video from "start_from"
-        index = os.listdir(input_dir).index(args.start_from)
-        for video_name in os.listdir(input_dir)[index:]:
+        
+        index = sorted_videonames.index(args.start_from)
+        
+        for video_name in sorted_videonames[index:]:
             if video_name.endswith(".MP4") and not video_name.startswith("._"):
                 snapshot(video_name)
 
