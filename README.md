@@ -102,5 +102,6 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 1. The dataset has approximately 144 hours of video
 2. About 30-40% of them are totally dark, just ignore those videos, don't capture/label them
 3. Only capture/label the frames when you can clearly identify the truck and trailer class
-4. Please contact me if you have any questions (peiyuns@student.unimelb.edu.au)
-5. Pei-Yun: I'll begin with Site02 and Site03.
+4. Make sure you capture the whole images (use the snapshot tools), not just part of them
+5. Please do not hestitate to contact me if you have any questions (peiyuns@student.unimelb.edu.au)
+6. We need people to work on Site01 and Day2 of Site04 (in folder "4a"), thank you!
