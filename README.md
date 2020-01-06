@@ -99,7 +99,7 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 ---
 
 ## Additional Notes
-1. The dataset has approximately 144 hours of video
+1. The dataset has approximately ~~144~~ 168 hours of video
 2. About 30-40% of them are totally dark, just ignore those videos, don't capture/label them
 3. Only capture/label the frames when you can clearly identify the truck and trailer class
 4. Make sure you capture the whole images (use the snapshot tools), not just part of them
