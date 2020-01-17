@@ -1,4 +1,6 @@
 # VicRoads-Labelling
+
+Update 01/17/2020: we've a new class: light commercial vehicle (LCV), please check the "Special Classes" section below.
  
 ## Quick Start
 
@@ -19,8 +21,8 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 ## Trucks and Trailers Taxonomy:
 * The classes are determined by the number of axles and the spacing between them
 * Check the first 26 classes in the PDF (up to 12 Axle B-triple): https://www.nhvr.gov.au/files/201707-0577-common-heavy-freight-vehicles-combinations.pdf
-* We're also interested in 4 additional classes: **Van**, **Bus**, **Other**, and **DGV**
-  * (So, there should be **30 classes** in total)
+* We're also interested in 4 additional classes: **Van**, **Bus**, **Other**, and **DGV** (and **LCV**, update: 17/01/2020)
+  * (So, there should be **~~30~~ 31 classes** in total)
 * 29 classes shown in the list below (this doesn't include DGV since it's a new class to identify)
   <img src="classes.png" width="300">
 
@@ -30,7 +32,8 @@ git clone https://github.com/ssswww4444/VicRoads-Labelling.git
 2. DGV: label the small DGV (Dangerous Goods Vehicles) signs  
 <img src="DGV.png" width="200">
 <img src="DGV2.png" width="500">
-
+3. **Update 17/01/2020:**  
+We've a **new** class: Light commercial vehicles (LCV), please label the light commercial vehicles, e.g. pickup trucks, as "LCV" (but still label the vans as "Van")
 ---
 
 ## Capturing images (Two Options)
